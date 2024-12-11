@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+body {
+    background-color: black;
+    color: beige;
+    /*coloca el color de letra y de fondo*/
+}
+
+h1 {
+    font-size: 3.5rem;
+    letter-spacing: 5px;
+    padding: 2rem;
+    font-family: "Playfair Display", serif;
+}
+
+h2 {
+    font-size: 2rem;
+    letter-spacing: 3.5px;
+    padding: 1.5rem;
+    font-family: "Lato", sans-serif;
+}
+
+h3 {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    padding: 1rem;
+    font-family: "Lato", sans-serif;
+}
+
+.section {
+    padding: 1.5rem;
+}
+
+.slogan {
+    font-size: 2rem;
+}
+
+.tenis {
+    border-radius: 10px;
+    width: 70vh;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.logo {
+    width: auto;
+    height: 1.5rem;
+}
+
+figcaption {
+    font-size: 1.5rem;
+    font-family: "Playfair Display", serif;
+    /* Ajusta el tamaño según tus necesidades */
+}
+
+.zoom-effect {
+    overflow: hidden;
+    /* Asegura que los bordes no se vean desbordados */
+    display: inline-block;
+}
+
+.zoom-effect img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.zoom-effect img:hover {
+    transform: scale(1.1);
+    /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Aplica una sombra alrededor */
+}
+
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(20px);
+        /* Ajusta este valor para más o menos movimiento */
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.tenis {
+    animation: moveUpDown 2s infinite;
+    /* Cambia '2s' por la duración que prefieras */
+}
